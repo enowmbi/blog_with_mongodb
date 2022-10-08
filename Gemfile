@@ -17,7 +17,6 @@ gem "mongoid"
 
 # Use bson_ext - c extensions to accelate ruby bson serialization
 gem "bson_ext"
-# gem "bson"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -48,6 +47,9 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
+
+# Use devise for authentication
+gem "devise"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
