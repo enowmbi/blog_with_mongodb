@@ -53,7 +53,21 @@ gem "devise"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "debug", platforms: %i[mri mingw x64_mingw]
+  # Use rspec-rails for test
+  gem "rspec-rails" 
+
+  # Use factory_bot_rails for generating factories
+  gem "factory_bot_rails" 
+
+  # Use Simplecov for test coverage
+  gem "simplecov", require: false
+
+  # Use shoulda-matchers for oneline expectations
+  gem "shoulda-matchers"
+
+  # Use annotate for anotation of models
+  gem "annotate"
 end
 
 group :development do
