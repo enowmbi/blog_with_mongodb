@@ -12,6 +12,13 @@ gem "sprockets-rails"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+# Use mongoid an ODM (Object Document Mapper) Framework for MongoDB
+gem "mongoid"
+
+# Use bson_ext - c extensions to accelate ruby bson serialization
+gem "bson_ext"
+# gem "bson"
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
