@@ -1,7 +1,13 @@
-<p style="color: green"><%= notice %></p>
-
 <%= render @article %>
-
+<%= form_with(model: [@article, @article.comments.build])  do |form| %>
+  <div>
+    <%= form.label :body, style: "display: block;" %>
+    <%= form.text_area :body, cols: 60, rows: 10 %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %>

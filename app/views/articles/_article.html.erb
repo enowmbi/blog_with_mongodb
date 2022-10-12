@@ -1,17 +1,26 @@
 <div id="<%= dom_id article %>">
   <p>
-    <strong>Title:</strong>
-    <%= article.title %>
+  <strong>Title:</strong>
+  <%= article.title %>
   </p>
 
   <p>
-    <strong>Body:</strong>
-    <%= article.body %>
+  <strong>Body:</strong>
+  <%= article.body %>
   </p>
 
   <p>
-    <strong>Total comments:</strong>
-    <%= pluralize(article.total_comments || 0, "comment") %>
+  <strong>Tags:</strong>
+  <%= article.tags %>
+  </p>
+
+  <p>
+  <strong>Categories:</strong>
+  <%= article.categories %>
+  </p>
+  <p>
+  <strong>Total comments:</strong>
+  <%= pluralize(article.total_comments || 0, "comment") %>
   </p>
 
 </div>
