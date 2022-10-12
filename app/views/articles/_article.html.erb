@@ -11,7 +11,7 @@
 
   <p>
     <strong>Total comments:</strong>
-    <%= article.total_comments %>
+    <%= pluralize(article.total_comments || 0, "comment") %>
   </p>
 
 </div>
