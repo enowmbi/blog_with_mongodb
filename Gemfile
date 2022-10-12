@@ -13,10 +13,7 @@ gem "sprockets-rails"
 gem "puma", "~> 5.0"
 
 # Use mongoid an ODM (Object Document Mapper) Framework for MongoDB
-gem "mongoid"
-
-# Use bson_ext - c extensions to accelate ruby bson serialization
-gem "bson_ext"
+gem "mongoid", "~> 8.0.2"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
