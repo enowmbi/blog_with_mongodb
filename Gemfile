@@ -65,6 +65,9 @@ group :development, :test do
 
   # Use annotate for anotation of models
   gem "annotate"
+
+  # Use letter_opener for opening mails in browser
+  gem "letter_opener"
 end
 
 group :development do
