@@ -10,6 +10,14 @@
     <%= form.text_area :body, cols: 60, rows: 10 %>
   </div>
   <div>
+    <h3>Comment(s) </h3>
+    <hr/>
+    <% @article.comments.each do |comment| %>
+      <p><%= comment.body %></p>
+      <hr/>
+    <% end %>
+  </div>
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
