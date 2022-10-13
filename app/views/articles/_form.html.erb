@@ -16,6 +16,8 @@
     <%= form.text_field :title %>
   </div>
 
+  <%= form.hidden_field :total_comments, value: 0 if article.new_record? %>
+
   <div>
     <%= form.label :body, style: "display: block" %>
     <%= form.text_area :body %>
