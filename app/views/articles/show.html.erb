@@ -1,4 +1,9 @@
 <%= render @article %>
+<div class="article-links">
+  <%= link_to "Back to articles", articles_path %>
+  <%= link_to "Edit this article", edit_article_path(@article) %>
+  <%= button_to "Destroy this article", @article, method: :delete %>
+</div>
 <%= form_with(model: [@article, @article.comments.build])  do |form| %>
   <div>
     <%= form.label :body, style: "display: block;" %>
@@ -8,9 +13,3 @@
     <%= form.submit %>
   </div>
 <% end %>
-<div>
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to articles", articles_path %>
-
-  <%= button_to "Destroy this article", @article, method: :delete %>
-</div>
